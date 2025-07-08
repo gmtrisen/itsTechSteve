@@ -3,56 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" href="me1.jpg" type="image/x-icon">
+     <link rel="icon" href="" type="image/x-icon">
       <link rel="stylesheet" href="style.css">
     <title>StephenKariukiMwangi</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <script src="https://kit.fontawesome.com/5d3d3d9c28.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 <body>
       <header>
-     <h1><u style="color: blue"><marquee>Hi Am Tech Steve</marquee></u> </h1>
+      <section id="name">
+        <div class="header">
+     <h1>Tech Steve</h1>
+     <div class="image">
+       <img src="me1.jpg" width="100" height="70" alt="">
+     </div>
      
-         <nav aria-labelledby="Click to navigate">
-        <h2 id="Click to navigate">Click to navigate</h2>
-         <ul>
-           <li>
-             <a href="#What I do">What I do</a>
-             
-           </li>
+      </div>
 
-            <li>
-             <a href="#Contact">Contact Me</a>
-             
-           </li>
-          
-         </ul>
-       </nav>
+      </section>
       </header>
+       <div class="nav-toggle" onclick="toggleNav()">☰</div>
 
-      <main>
-      <article id="What I do">
+  <nav id="sideNav" class="closed">
+    <ul>
+      <li><a href="#name">Name</a></li>
+      <li><a href="#Work">Work</a></li>
+       <li><a href="#Contact">Contact</a></li>
+       <li><a href="#More information">More information</a></li>
+
+    </ul>
+  </nav>
+
+  <script >function toggleNav() {
+  const nav = document.getElementById("sideNav");
+  nav.classList.toggle("closed");
+} </script>
+
+
+
+
+    
+      <section id="Work">
+     <div class="work">
+      <h1>Work</h1>
      
-     <h3><u>What I do</u> </h2>
-     <p>I am a website developer and designer ,
+     <p>I am a website developer and designer .
         <br>
-        Specialized in webdev and cascading stylesheets, ready to work with you 
+        Specialized in webdev and cascading stylesheets,  
         <br>
+        Well gained knowledge of dev tools.
+        <br>
+        Websites I create:
         <i>
-        to build a website for shopping , advirtisements , social sites and more.
+        <ul><li>Information websites</li></ul>
+        </i>
+         <i>
+        <ul><li>eCommerce websites</li></ul>
+        </i>
+         <i>
+        <ul><li>Interative websites</li></ul>
         </i>
     </p>
+    <p>Email me to access my variety of websites</p>
+     </div>
    
-      <img src="me2.jpg" alt="HTML screen" title="Hi" width="300"
-      height="300">
-      <br>
-      <span>Tech Steve @gmtrisen</span>
-      <hr>
-      </article>
+      </section>
 
    
      
-    <hr>
+   
 
-      <article id="Contact">
+      <section id="Contact">
       
         <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
@@ -67,73 +90,41 @@
          <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
          <button type="submit">Submit<img src="ifont.svg" alt=""></button>
         </form>
-        <div class="contact-right">
-            <img src="me3.jpg" width="100" height="70" alt="">
-        </div>      
+          
 
 
     </div>
 
-           <hr>
-         <p>For more information contact me here.</p>
+      </section>
+         <section id="More information">
+          
+          
+<div class="footer-row">
+    <div class="footer-left">
 
-         
-           <ul>
-                          
-              <li>
-                 Dial <a href="tel:+254702105515">my phone number</a>.
-              </li>
-              <li>
-                Open <a href="https://www.google.com/"
-                  target="_blank">Google</a>in a new tab
-
-              
-           </ul>
-
-            <address>
-
-        JUJa ...  Witeithie ward ... Kibute area <br>
-Thika Road P.O.Box 01000, Kiambu Kenya (East Africa)<br>
+        <h1>Opening hours</h1>
+        <p><i class="fa fa-clock-o"></i>Monday to Friday -9am to 9pm</p>
+        <p><i class="fa fa-clock-o"></i>Saturday and Sunday -8am to 11pm</p>
+    </div>
+    <div class="footer-right"> 
+        <h1>Get In Touch</h1>
+        <p>Kiambu,Kenya<i class="fa fa-map-marker"></i></p>
         
-      </address>
-          <br>
-          <br>
-          <br>
-    <p><marquee>You can also <mark>whatsapp me at: 0702105515</mark></marquee></p>
+        <p><a href="tel:+254702105515">my phone number</a><i class="fa fa-phone"></i></p>
+        
+       
+    </div>
+</div>
+<div class="social-links">
     
-    <aside>
-        <details>
-      <summary>
-      <u> My working Period</u>
-    </summary>
-    <p><i>
-        <ul>
-            <li>
-                Monday-Saturday
-            </li>
-            <br>
-            <li>
-                from <time datetime="07:00">7 am</time> to <time datetime="10:00">10 pm</time> 
-            </li>
-        </ul>
-        </i>
-    </p>
-        </details>
-    </aside>
-     </article>
-   </main> 
-   <br>
-    <br>
-    <br>
-   <hr>
-   <footer>
+  
+    <p>StephenKariukiMwangi</p>
+</div>
 
-        <p>
-      &lt;&lt;&lt; &copy;Stephen Kariuki</a>  &gt;&gt;&gt;
-        </p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-      </footer>
-</body>
+    
+
+ </section>
+ </body>
 </html>
+
+    
